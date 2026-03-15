@@ -1,41 +1,25 @@
-// Change Home Text
-document.getElementById("changeTextBtn").addEventListener("click", function () {
-  document.getElementById("homeDesc").innerText =
-    "I love building websites and mobile apps using JavaScript and Flutter.";
-});
+const form = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
 
-// Reset Home Text
-document.getElementById("resetBtn").addEventListener("click", function () {
-  document.getElementById("homeDesc").innerText =
-    "Frontend Developer & Student";
-});
+form.addEventListener("submit", function(event){
 
-// Change Profile Image when clicked
-const img = document.getElementById("profileImg");
-img.addEventListener("click", function () {
-  img.src = "images/profile2.png"; // add another image
-});
+event.preventDefault();
 
-// Contact Form Functionality
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+let name = document.getElementById("name").value.trim();
+let email = document.getElementById("email").value.trim();
+let message = document.getElementById("message").value.trim();
 
-  let name = document.getElementById("name").value.trim();
-  let email = document.getElementById("email").value.trim();
-  let message = document.getElementById("message").value.trim();
-  let status = document.getElementById("formStatus");
+if(name === "" || email === "" || message === "")
+{
+formMessage.textContent = "❌ Invalid! Please fill all fields.";
+formMessage.style.color = "red";
+}
+else
+{
+formMessage.textContent = "✅ Message Sent Successfully!";
+formMessage.style.color = "green";
 
-  if (name === "" || email === "" || message === "") {
-    status.textContent = "❌ Please fill all fields.";
-    status.style.color = "red";
-  } else {
-    status.textContent = "✅ Message sent successfully!";
-    status.style.color = "green";
+form.reset();
+}
 
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Message:", message);
-
-    document.getElementById("contactForm").reset();
-  }
 });

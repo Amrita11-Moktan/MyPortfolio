@@ -1,122 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <header>
-      <h2 class="logo">Amrita Moktan</h2>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+<head>
+<meta charset="UTF-8">
+<title>Amrita Portfolio</title>
+<link rel="stylesheet" href="style.css">
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
-      <div class="hero-container">
-        <div class="hero-text">
-          <h1>Hi, I'm <span>Amrita Moktan</span></h1>
-          <p id="homeDesc">Frontend Developer & Student</p>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-          <button id="changeTextBtn">About Me</button>
-          <button id="resetBtn">Reset</button>
-        </div>
+</head>
 
-        <div class="hero-image">
-          <img
-            src="./assets/IMG_0955.PNG"
-            alt="My Photo"
-            id="profileImg"
-          />
-        </div>
-      </div>
-    </section>
+<body>
 
-    <!-- About Section -->
-    <section id="about">
-      <div class="hero-image">
-        <img
-          src="./assets/IMG_0955.PNG"
-          alt="My Photo"
-          id="profileImg"
-        />
-      </div>
-      <div class="about-content">
-        <h2>About Me</h2>
-        <p>
-          I am a college student passionate about web development and Flutter. I
-          love designing websites and learning new technologies.
-        </p>
-      </div>
-    </section>
+<!-- Navbar -->
 
-    <!-- Skills Section -->
-<section id="skills">
-  <h2>My Skills</h2>
-  <ul class="skills-list">
-    <li><img src="./assets/html.png" alt="HTML"></li>
-    <li><img src="./assets/css.png" alt="CSS"></li>
-    <li><img src="./assets/js.jpg" alt="JavaScript"></li>
-    <li><img src="./assets/flutter.png" alt="Flutter"></li>
-  </ul>
+<nav>
+<h1 class="logo">MyPortfolio</h1>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Home -->
+
+<section id="home">
+
+<div class="home-text">
+
+<h2>Hello I'm</h2>
+<h1>Amrita Moktan</h1>
+<p>Frontend Developer | Designer</p>
+
+<a href="#portfolio" class="btn">View My Work</a>
+
+</div>
+
 </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-      <h2>My Projects</h2>
-      <div class="projects">
-        <div class="project-card">
-          <p>Calculator</p>
-          <img
-            src="https://www.casio.com/content/dam/casio/product-info/locales/us/en/calc/product/scientific/F/FX/FX3/FX-300MSPLUS-2/us-assets/fx-300MS%20Plus%202%20Front%20Off.png.transform/main-visual-sp/image.png"
-            alt="calc"
-            style="width: 100%; height: 80%"
-          />
-        </div>
-        <div class="project-card">
-          <p>Calculator</p>
-          <img
-            src="https://www.casio.com/content/dam/casio/product-info/locales/us/en/calc/product/scientific/F/FX/FX3/FX-300MSPLUS-2/us-assets/fx-300MS%20Plus%202%20Front%20Off.png.transform/main-visual-sp/image.png"
-            alt="calc"
-            style="width: 100%; height: 80%"
-          />
-        </div>
-        <div class="project-card">
-          <p>Calculator</p>
-          <img
-            src="https://www.casio.com/content/dam/casio/product-info/locales/us/en/calc/product/scientific/F/FX/FX3/FX-300MSPLUS-2/us-assets/fx-300MS%20Plus%202%20Front%20Off.png.transform/main-visual-sp/image.png"
-            alt="calc"
-            style="width: 100%; height: 80%"
-          />
-        </div>
-      </div>
-    </section>
+<!-- About -->
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Me</h2>
+<section id="about">
 
-      <form id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" />
-        <input type="email" id="email" placeholder="Your Email" />
-        <textarea id="message" placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+<h2>About Me</h2>
 
-      <p id="formStatus"></p>
-    </section>
+<p>
+I am a creative web developer who enjoys designing aesthetic 
+and modern websites that provide a smooth user experience.
+ I focus on building clean, responsive, and interactive interfaces
+  using technologies like HTML, CSS and JavaScript.
+   I am passionate about learning new tools and techniques that help me improve my development and design skills. My goal is to create websites that are not only visually appealing but also functional, user-friendly, and efficient.
+</p>
 
-    <footer>
-      <p>© 2026 Amrita Moktan</p>
-    </footer>
+</section>
 
-    <script src="script.js"></script>
-  </body>
+<!-- Skills -->
+
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="skills-container">
+
+<div class="skill-card">HTML</div>
+<div class="skill-card">CSS</div>
+<div class="skill-card">JavaScript</div>
+<div class="skill-card">Flutter</div>
+
+</div>
+
+</section>
+
+<!-- Portfolio -->
+
+<section id="portfolio">
+
+<h2>My Projects</h2>
+
+<div class="project-container">
+
+<div class="project-card">
+<h3>Login page</h3>
+<p>User access page</p>
+ <a href="https://github.com/Amrita11-Moktan/login_ui" target="_blank" class="project-btn">
+    View Project
+  </a>
+</div>
+
+<div class="project-card">
+<h3>Netflix Clone</h3>
+<p>Streamflix Media Ui</p>
+<a href="https://github.com/Amrita11-Moktan/Netflix-clone" target="_blank" class="project-btn">
+    View Project
+  </a>
+</div>
+
+<div class="project-card">
+<h3>My Portfolio</h3>
+<p>Showcase My Work</p>
+<a href="https://github.com/Amrita11-Moktan/MyPortfolio" target="_blank" class="project-btn">
+    View Project
+  </a>
+</div>
+
+</div>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form id="contactForm">
+
+<input type="text" id="name" placeholder="Your Name">
+<input type="email" id="email" placeholder="Your Email">
+<textarea id="message" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+<p id="formMessage"></p>
+
+</form>
+
+</section>
+
+<script src="script.js"></script>
+
+<footer>
+
+<p>© 2026 Amrita Moktan</p>
+
+</footer>
+
+</body>
 </html>
